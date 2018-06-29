@@ -5,9 +5,12 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
+            
         <main class="container-fluid">
+                
                 <header>
                         <nav>
                             <div class="nav-wrapper teal lighten-2">
@@ -28,7 +31,7 @@
                 </section>
 
                 <section class="container">
-                    <h5 class="center">Solicitar Suporte</h5>
+                    <h4 class="center">Solicitar Suporte</h4>
                     <div class="row">
                         <form class="col s12" action="">
                             <div class="row">
@@ -37,9 +40,13 @@
                                     <label for="nome">Qual o seu nome?</label>
                                     <span class="helper-text" data-error="Você deve digitar seu nome!" data-success="Ótimo nome!" ></span>
                                 </div>
-                                <div class="input-field col s6">
-                                        <input autocomplete="off" type="text" class="datepicker" id="data">
-                                        <label for="data">Data</label>                                       
+                                <div class="input-field col s3">
+                                        <input autocomplete="off" placeholder="Data" type="text" class="datepicker" id="data">
+                                        <!-- <label for="data">Data</label>                                        -->
+                                </div>
+                                <div class="input-field col s3">
+                                    <input id="hora" type="text" placeholder="Hora" class="timepicker">
+                                    
                                 </div>
                                 <div class="input-field col s12">
                                     <input class="validate" id="endereco" type="text">
@@ -55,8 +62,21 @@
                                     <input autocomplete="off" type="text" class="datepicker" id="prazo">
                                     <label for="prazo">Data</label>                                       
                                 </div>
-
-                            </div>
+                                <div class="input-field col s6">
+                                    <select>
+                                        <option value="" disabled selected>Qual a prioridade?</option>
+                                        <option value="1">Baixa</option>
+                                        <option value="2">Média</option>
+                                        <option value="3">Alta</option>
+                                    </select>
+                                    <label>Defina a prioridade do seu pedido!</label>
+                                    </div>
+                                </div>
+                                
+                                <button class="waves-effect btn waves-light col right s6">
+                                    Pedir suporte
+                                    <i class="material-icons right">email</i>
+                                </button>
                         </form>
                     </div>
 
